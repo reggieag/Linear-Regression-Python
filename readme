@@ -1,0 +1,5 @@
+Linear Regression Implementation in Python
+------------------------------------------
+
+This is an implementation of linear regression from scratch using a gradient descent algorithim. 
+I essentially translated the linear regression equations into python code and hacked out a gradient descent algorithim.
