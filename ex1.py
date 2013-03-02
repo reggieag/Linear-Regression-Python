@@ -10,23 +10,19 @@ df = pd.read_csv('ex1data1.txt', header = None, names = ['x','y'])
 x = np.array(df.x)
 y = np.array(df.y)
 theta = np.zeros((2,1))
-#scatterplot of data 
-def scatterPlot(x,y,yp=None):
-	plt.xlabel('Population of City in 10,000s')
-	plt.ylabel('Profit in $10,000s')
-	plt.scatter(x, y, marker='x')
-	if yp != None:
-		plt.plot(x,yp)
-	plt.show()
 
-def scatterPlotSave(x,y,yp=None):
-	name = raw_input('Name Figure File: ')
+#scatterplot of data with option to save figure.
+def scatterPlot(x,y,yp=None,savePng=False):
 	plt.xlabel('Population of City in 10,000s')
 	plt.ylabel('Profit in $10,000s')
 	plt.scatter(x, y, marker='x')
 	if yp != None:
 		plt.plot(x,yp)
-	plt.savefig(name+'.png')
+	if savePng==false:
+		plt.show()
+	else:
+		name = raw_input('Name Figure File: ')
+		plt.savefig(name+'.png')
 
 scatterPlot(x,y)
 
@@ -41,9 +37,6 @@ scatterPlot(x,y,yp)
 #Linear Regression from scratch using Gradient Descent
 #cost function
 
-#convert x and y into numpy arrays
-x = x.values
-y = y.values
 
 #work in progress...
 def cost(x, y, theta):
