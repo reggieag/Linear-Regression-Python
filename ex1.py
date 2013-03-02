@@ -1,7 +1,9 @@
+from __future__ import division
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt 
 import math
+
  
 
 df = pd.read_csv('ex1data1.txt', header = None, names = ['x','y'])
@@ -16,6 +18,15 @@ def scatterPlot(x,y,yp=None):
 	if yp != None:
 		plt.plot(x,yp)
 	plt.show()
+
+def scatterPlotSave(x,y,yp=None):
+	name = raw_input('Name Figure File: ')
+	plt.xlabel('Population of City in 10,000s')
+	plt.ylabel('Profit in $10,000s')
+	plt.scatter(x, y, marker='x')
+	if yp != None:
+		plt.plot(x,yp)
+	plt.savefig(name+'.png')
 
 scatterPlot(x,y)
 
