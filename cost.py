@@ -24,7 +24,6 @@ def cost(x, y, theta=np.zeros((2,1))):
 def gradientDesc1(x, y, theta=np.zeros((2,1)), alpha=.01,iterations=1500):
 	""""Gradient Descent implementation of 
 	linear regression with one variable"""
-	#might need to add another for loop to do iterations
 	m = y.size
 	#assert len(x) == len(y), 'number of x\'s and y\'s doesn\'t match' 
 	J = []
@@ -45,7 +44,6 @@ def gradientDesc(x, y, theta=np.zeros((2,1)), alpha=.01,iterations=1500):
 	m = y.size
 	#assert len(x) == len(y), 'number of x\'s and y\'s doesn\'t match' 
 	J = []
-	#YOU NEED TO FUCKING RUN THROUGH THE ENTIRE FUCKING ARRAY EACH ITTERATION YOU DUMBASS
 	for numbers in range(iterations):
 		a = theta[0][0] - alpha*(1/m)*sum((x.dot(theta).flatten() - y)*x[:,0])
 		b = theta[1][0] - alpha*(1/m)*sum((x.dot(theta).flatten() - y)*x[:,1])
