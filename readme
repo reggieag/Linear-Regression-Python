@@ -2,4 +2,16 @@ Linear Regression Implementation in Python
 ------------------------------------------
 
 This is an implementation of linear regression from scratch using a gradient descent algorithim. 
-I essentially translated the linear regression equations into python code and hacked out a gradient descent algorithim.
+
+linearRegression1.py
+--------------------
+
+This script uses python libraries to perform linear regression on 'ex1data1.txt'. It creates a scatterplot of the data and overlays
+the line found on top of the plot.
+
+
+linearRegression2.py
+--------------------
+
+This script is an implementation of linear regression with gradient descent from scratch. 
+The plotting aspect still needs to be completed.
