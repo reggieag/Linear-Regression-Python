@@ -6,8 +6,8 @@ This is an implementation of linear regression from scratch using a gradient des
 linearRegression1.py
 --------------------
 
-This script uses python libraries to perform linear regression on 'ex1data1.txt'. It creates a scatterplot of the data and overlays
-the line found on top of the plot.
+This script uses python libraries to perform linear regression on 'ex1data1.txt'. 
+It creates a scatterplot of the data and overlays the line found on top of the plot.
 
 
 linearRegression2.py
